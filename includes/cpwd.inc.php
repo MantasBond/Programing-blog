@@ -1,4 +1,5 @@
 <?php
+//Changing the password on database with inputs from profile.php
 session_start();
 include '../dbh.php';
 
@@ -25,7 +26,7 @@ if (empty($oldpwd & $newpwd & $repwd)) {
 	$hashing_pwd = password_hash($newpwd, PASSWORD_DEFAULT);
 	$sql = "UPDATE user SET pwd='$hashing_pwd' WHERE id=".$_SESSION['id'];#
 	$result = mysqli_query($conn, $sql);
-	
+
 	header("Location: ../profile.php?success");
 }
 ?>
