@@ -1,2 +1,0 @@
-testing if atom works with git
-testing
