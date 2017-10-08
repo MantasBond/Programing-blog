@@ -16,7 +16,7 @@
 	<input type='text' name='last' placeholder='Last Name'>
 	<input type='text' name='uid' placeholder='Username'>
 	<input type='password' name='pwd' placeholder='Password'>
-	<input type="password" name="repwd" placeholder='Reapeat Pasword'>
+	<input type="password" name="repwd" placeholder='Repeat Pasword'>
 	<button type='submit'>SIGN UP</button>
 </form>";
 </body>
