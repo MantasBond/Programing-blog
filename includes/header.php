@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Title of the document</title>
-<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -34,7 +34,7 @@
 							<button type='submit'>LOGIN</button>
 						</form>";
 						echo "<li><a href='signup.php'>SIGNUP</a></li>";
-				}	
+				}
 			?>
 		</ul>
 	</nav>
