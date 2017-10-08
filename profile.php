@@ -29,7 +29,7 @@ echo "<h class='heading'>Change Password</h>";
 echo "<form id='newpwd' action='includes/cpwd.inc.php' method='POST'>
 		<input type='password' name='opwd' placeholder='Old Password'>
 		<input type='password' name='npwd' placeholder='New Password'>
-		<input type='password' name='rpwd' placeholder='Reapeat Pasword'>
+		<input type='password' name='rpwd' placeholder='Repeat Pasword'>
 		<button type='submit'>SUBMIT</button>
 	</form>";
 ?>
