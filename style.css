@@ -156,3 +156,11 @@ nav ul form button{
 	margin-top: 25px;
 
 }
+
+#content {
+	background: #e5e5e5;
+	min-height: 250px;
+	width: 75%;
+	margin: auto;
+	border-radius: 4px;
+}
