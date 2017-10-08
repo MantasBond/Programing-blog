@@ -3,9 +3,10 @@
 session_start();
 include '../dbh.php';
 
-$oldpwd = $_POST['opwd'];
-$newpwd = $_POST['npwd'];
-$repwd = $_POST['rpwd'];
+//Escape string for preventing SLQ Injections
+$oldpwd = mysqli_real_escape_string($_POST['opwd']);
+$newpwd = mysqli_real_escape_string($_POST['npwd']);
+$repwd = mysqli_real_escape_string($_POST['rpwd']);
 
 $sql = "SELECT * FROM user WHERE id=".$_SESSION['id'];
 $result = mysqli_query($conn, $sql);

@@ -1,13 +1,16 @@
 <?php
 include '../dbh.php';
 
-$first = $_POST['first'];
-$last = $_POST['last'];
-$uid = $_POST['uid'];
-$pwd = $_POST['pwd'];
-$rpwd = $_POST['repwd'];
+//Escape string to prevent SLQ Injections
+$first = mysqli_real_escape_string($_POST['first']);
+$last = mysqli_real_escape_string($_POST['last']);
+$uid = mysqli_real_escape_string($_POST['uid']);
+$pwd = mysqli_real_escape_string($_POST['pwd']);
+$rpwd = mysqli_real_escape_string($_POST['repwd']);
 
+//Hashing password
 $hashing_pwd = password_hash($pwd, PASSWORD_DEFAULT);
+//Hashed password check
 $pwd_check = password_verify($rpwd, $hashing_pwd);
 
 if (empty($first & $last & $uid & $pwd & $rpwd)) {
@@ -25,12 +28,12 @@ if (empty($first & $last & $uid & $pwd & $rpwd)) {
 		header("Location: ../signup.php?error=username");
 		exit();
 	} else{
-		$sql = "INSERT INTO user (first, last, uid, pwd) 
+		$sql = "INSERT INTO user (first, last, uid, pwd)
 		VALUES ('$first', '$last','$uid', '$hashing_pwd')";
 		$result = mysqli_query($conn, $sql);
 
 		header("Location: ../index.php");
 	}
-}	
+}
 
 ?>
