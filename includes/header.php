@@ -8,12 +8,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Title of the document</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous">
-</script>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/dropdown_menu.js"></script>
 </head>
 <body>
 
@@ -33,12 +30,8 @@
 							<button>LOG OUT</button>
 						</form>";
 				} else {
-					echo "<form action='includes/login.inc.php' method='POST'>
-							<input type='text' name='uid' placeholder='Username'>
-							<input type='password' name='pwd' placeholder='Password'>
-							<button type='submit'>LOGIN</button>
-						</form>";
-						echo "<li><a href='signup.php'>SIGNUP</a></li>";
+					echo "<li><button class='menu_btn' id='log_btn'>LOGIN</button></li>";
+					echo "<li><button class='menu_btn' id='sign_btn'>SIGNUP</button></li>";
 				}
 			?>
 		</ul>
