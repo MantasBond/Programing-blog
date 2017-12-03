@@ -8,9 +8,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Title of the document</title>
-<link rel="stylesheet" type="text/css" href="style3.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style5.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="js/dropdown_menu.js"></script>
+<script src="js/sign_up_val.js"></script>
+<script src="js/login_val.js"></script>
 </head>
 <body>
 
