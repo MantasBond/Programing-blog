@@ -7,7 +7,7 @@
 			<input id='login-pwd' type='password' name='pwd' placeholder='Password' autocomplete="off">
 			<button id='login-submit' type='submit'>LOGIN</button>
 			<p class="login-message"></p>
-	</form>;
+	</form>
 </div>
 
 <div id="reg_menu">
@@ -19,7 +19,11 @@
 		<input id="sign-repwd" type="password" name="repwd" placeholder='Repeat Pasword' autocomplete="off">
 		<button id="sign-submit" type='submit'>SIGN UP</button>
 		<p class="sign-message"></p>
-	</form>";
+	</form>
+</div>
+
+<div id="create_content">
+	<button id="content_btn">Create a post</button>
 </div>
 
 <div class="content">
