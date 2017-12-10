@@ -14,6 +14,9 @@
 <script src="js/sign_up_val.js"></script>
 <script src="js/login_val.js"></script>
 <script src="js/profile_val.js"></script>
+<script src="js/logout_btn.js"></script>
+<script src="js/buttons.js"></script>
+<script src="js/post_form.js"></script>
 </head>
 <body>
 
@@ -25,16 +28,14 @@
 					echo "<li id='welcome'>Welcome $name !</li>";
 				}
 			?>
-			<li><a href="index.php">HOME</a></li>
+			<li><button class="menu_btn" id="home_btn">HOME</button></li>
 			<?php
 				if (isset($_SESSION['id'])) {
-					echo "<li><a href='profile.php'>PROFILE</a></li>
-						<form action='includes/logout.inc.php'>
-							<button>LOG OUT</button>
-						</form>";
+					echo "<li><button class='menu_btn' id='profile_btn'>PROFILE</button></li>";
+					echo	"<li><button class='menu_btn' id='logout_btn'>LOG OUT</button></li>";
 				} else {
-					echo "<li><button class='menu_btn' id='log_btn'>LOGIN</button></li>";
-					echo "<li><button class='menu_btn' id='sign_btn'>SIGNUP</button></li>";
+					echo "<li id='active_btn1'><button class='menu_btn' id='log_btn'>LOGIN</button></li>";
+					echo "<li id='active_btn2'><button class='menu_btn' id='sign_btn'>SIGNUP</button></li>";
 				}
 			?>
 		</ul>

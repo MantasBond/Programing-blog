@@ -9,20 +9,22 @@ body {
 
 header {
 	width: 100%;
-	height: 60px;
-	background-color: #222222;
+	height: 49px;
+	background-color: #222;
 }
 
 nav ul {
 	float: right;
-	margin-top: 20px;
-	margin-right: 60px;
+	/*margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 60px;*/
 }
 
 nav ul li {
 	list-style: none;
 	float: left;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
+	padding: 15px 32px;
 }
 
 nav ul li a {
@@ -35,14 +37,14 @@ nav ul form {
 	float: left;
 }
 
-nav ul form input {
+/*nav ul form input {
 	float: left;
 	border: none;
 	margin-right: 6px;
 	padding: 1px;
-}
+}*/
 
-nav ul form button{
+/*nav ul form button{
 	float: left;
 	border: none;
 	margin-right: 20px;
@@ -50,7 +52,7 @@ nav ul form button{
 	color: #222;
 	font-size: 16px;
 	cursor: pointer;
-}
+}*/
 
 #signup {
 	width: 100%;
@@ -190,12 +192,12 @@ nav ul form button{
 }
 
 #login_menu {
-	background: #222;
-	/*border: solid 4px black;*/
-	width: 100%;
+	/*background: #222;
+	border: solid 4px black;
+	width: 100%;*/
 	height: 255px;
-	padding-top: 1px;
-	display: none;
+	/*padding-top: 1px;
+	display: none;*/
 }
 
 #login_menu input {
@@ -221,20 +223,36 @@ nav ul form button{
 	cursor: pointer;
 	border-radius: 4px;
 	padding: 5px;
+	border: solid 1px;
 }
 
 #reg_menu {
-	background: #222222;
-	/*border: solid 4px black;*/
-	width: 100%;
+	/*background: #222222;
+	border: solid 4px black;
+	width: 100%;*/
 	padding-bottom: 50px;
-	padding-top: 1px;
-	display: none;
+	/*padding-top: 1px;
+	display: none;*/
 }
-
+.dropdown_menu {
+	background: rgba(85, 85, 85, 1);
+	width: 100%;
+	display: none;
+	padding-top: 1px;
+}
+.activeBtn {
+	color: #222;
+	background: rgba(85, 85, 85, 1);
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	border: none;
+}
 .menu_btn {
 	color: #fff;
-	background: #222222;
+	background: #222;
 	font-family: Arial;
 	font-size: 16px;
 	text-decoration: none;
@@ -244,7 +262,7 @@ nav ul form button{
 }
 
 .menuActive {
-	background: #FFFFFF;
+	background: rgba(85, 85, 85, 1);
 }
 
 .input_error {
@@ -294,11 +312,11 @@ nav ul form button{
 	margin: auto;
 }
 
-#create_content button {
+#content_btn {
 	width: 25%;
 	display: block;
-    margin: auto;
-    margin-top: 25px;
+  margin: auto;
+  margin-top: 25px;
 	border: none;
 	background-color: orange;
 	color: #222;
@@ -306,4 +324,21 @@ nav ul form button{
 	cursor: pointer;
 	border-radius: 4px;
 	padding: 5px;
+}
+#post_form {
+	border: solid;
+	width: 65%;
+	margin: auto;
+	display: none;
+}
+
+#post_form input {
+	padding: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 25%;
+    height: 25px;
+    font-size:25px;
+    border-radius: 4px;
 }
